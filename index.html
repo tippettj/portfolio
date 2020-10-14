@@ -50,7 +50,7 @@
     <!-- Assign container as an mdl container with mdl behaviour to layout and set the background to light grey -->
     <!-- See https://material.io/design/color/the-color-system.html#tools-for-picking-colors for colors -->
     <div
-      class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--grey-100"
+      class="mdl-layout mdl-js-layout  mdl-color--grey-100"
     >
       <main class="mdl-layout__content">
 
@@ -64,22 +64,22 @@
             >
             <div class="mdl-layout-spacer"></div>
 
-            <a href="#tab-about-panel" class="mdl-tabs__tab is-active">About</a>
-            <a href="#tab-portfolio-panel" class="mdl-tabs__tab">Portfolio</a>
+            <a href="#tab-about-panel" class="mdl-tabs__tab ">About</a>
+            <a href="#tab-portfolio-panel" class="mdl-tabs__tab is-active">Portfolio</a>
             <a href="#tab-contact-panel" class="mdl-tabs__tab contact">Contact</a>
           </div>
 
           <!-- Setup the 'about-panel' tab display. This is a grid where the left contains and image and
               the right contains a brief description about 'me' -->
-          <div class="about">
-            <div class="container mdl-tabs__panel is-active" id="tab-about-panel">
-              <div class="mdl-grid ">
+          <div class="panels-container">
+            <div class="container mdl-tabs__panel " id="tab-about-panel">
+              <div class="mdl-grid site-max-width">
                 
                 <div  class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card about__card mdl-color--grey-100 ">
                   <img
                     class="about__image"
                     src=" ./images/computerDesk1.png"
-                      alt="image of desk"
+                      alt="Desk"
                   />                
                 </div>
               
@@ -87,9 +87,9 @@
                   <div style="margin: auto;" class="mdl-card__supporting-text">
                     <h2 class="about__me">Julie Tippett</h2>
                     <div>
-                      <a href="http://github.com/tippettj" target="_blank"><img class="about__social-media" src="./images/github.svg"></img>
+                      <a href="http://github.com/tippettj" target="_blank"><img class="about__social-media" src="./images/media/githubIcon.svg"></img>
                       </a>
-                      <a href="http://linkedin.com/in/julie-s-tippett" target="_blank"><img class="about__social-media" src="./images/linkedIn.png"></img>
+                      <a href="http://linkedin.com/in/julie-s-tippett" target="_blank"><img class="about__social-media" src="./images/media/linkedInIcon.png"></img>
                       </a>
                       <div>
                         <h4 class="about__desc">Back into the code! Back into the code! Back into the code! Back into the code!</h4>
@@ -97,48 +97,120 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-              <!-- Setup the 'portfolio' tab display. This contains the crux of information in cards  -->
-            </div>
-          </div>
-        </div>
-        <!-- <div class="mdl-layout__tab-panel is-active" id="about">
-         
-          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--6-col">
-              <img
-                class="article-image"
-                src=" ./images/computerDesk2.jpg"
-                alt="oops"
-              />
-            </div>
-            <div class="mdl-cell mdl-cell--4-col article-text">
-              <p>Hi, I am <strong>Julie</strong></p>
-              <p>I have started coding again!</p>
-            </div>
-          </div>
+            <!-- Setup the 'portfolio' tab display. This contains the crux of information in cards  -->
+            <div class="container mdl-tabs__panel is-active" id="tab-portfolio-panel">
+              <p class="mdl-typography--title" id="titles">Apps and APIs</p>
 
-          
-          <section
-            class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"
-          ></section>
-          <section
-            class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"
-          ></section>
-          <section class="section--footer mdl-color--white mdl-grid"></section>
+              <div class="mdl-grid site-max-width">
+                
+                <!-- Weather App Card-->
+                <div class="mdl-cell mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__media">
+                    <img class="portfolio__article-image" src="./images/cards/weatherApp.png" border="0" alt="Weather App">
+                  </div>
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Weather App</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Displays the weather for a given location.
+      
+                  </div>
+                  <br>
+                  <div >
+                    <a href="https://nodejs.org/en/" target="_blank">
+                    <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
+                    <a href="https://expressjs.com/" target="_blank">
+                    <img class="port__language-icons" src="./images/media/expressIcon.png" alt="Express Icon"></a>
+                    <a href="https://heroku.com/" target="_blank">
+                    <img class="port__language-icons" src="./images/media/herokuIcon.svg" alt="Heroku Icon"></a>
+
+                  </div>
+                  <br>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://tippj-weather-app.herokuapp.com" target="_blank">
+                      Try it
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Chat App Card-->
+                <div class="mdl-cell mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__media">
+                    <img class="portfolio__article-image" src="./images/cards/chatApp.png" border="0" alt="Chat apple-mobile-web-app-capable">
+                  </div>
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Chat App</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Opens up a chat room where multiple people can talk and share their location using google maps.
+                  </div>
+
+                  <br>
+                  <div >
+                    <a href="https://nodejs.org/en/" target="_blank">
+                    <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
+                    <a href="https://expressjs.com/" target="_blank">
+                    <img class="port__language-icons" src="./images/media/expressIcon.png" alt="Express Icon"></a>
+                    <a href="https://heroku.com/" target="_blank">
+                    <img class="port__language-icons" src="./images/media/herokuIcon.svg" alt="Heroku Icon"></a>
+
+                  </div>
+                  <br>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://tippj-weather-app.herokuapp.com" target="_blank">
+                      Try it
+                    </a>
+                  </div>
+                </div>
+  
+                <!-- Task Manager API -->
+                <div class="mdl-cell mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__media">
+                    <img class="portfolio__article-image" src="./images/cards/taskApi.png" border="0" alt="./images/cards/check-list.png">
+                  </div>
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Task Manager API</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <p>Utilizes REST API to allow an authenicated user to create and manage tasks.</p>
+                    <p></p>Sends welcome and cancellation email to user.</p>             
+                  </div>
+
+                  <br>
+                  <div >
+                    <a href="https://nodejs.org/en/" target="_blank">
+                      <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
+                    <a href="https://expressjs.com/" target="_blank">
+                      <img class="port__language-icons" src="./images/media/expressIcon.png" alt="Express Icon"></a>
+                    <a href="https://mongodb.com/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/mongoIcon.png" alt="Mongodb Icon"></a>
+                    <a href="https://heroku.com/" target="_blank">
+                      <img class="port__language-icons" src="./images/media/herokuIcon.svg" alt="Heroku Icon"></a>
+                    <a href="https://mongoosejs.com/" target="_blank">
+                    <img class="port__language-icons" src="./images/media/mongooseIcon.jpg" alt=""></a>
+                  </div>
+                  <br>
+
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/tippettj/task-manager" target="_blank">
+                      REPOSITORY
+                    </a>
+                  </div>
+                </div>
+              </div> <!-- end grid containing cards-->
+
+              </div><!-- end portfolio tab panel -->            
+            
+          </div><!-- end tab panels  -->
+
         </div>
-        <div class="mdl-layout__tab-panel" id="playground">
-          
-        </div> -->
+      
+        <!-- end tabs section -->
       </main>
     </div>
-    <!-- <a
-      href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/"
-      target="_blank"
-      id="view-source"
-      class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"
-      >View Source</a
-    > -->
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>

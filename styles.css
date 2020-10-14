@@ -19,7 +19,7 @@ a {
   color: #048679;
 }
 
-.about {
+.panels-container {
   margin: 1em auto;
   min-height: 85vh;
 }
@@ -56,6 +56,30 @@ a {
   max-width: 500px;
 }
 
+img.portfolio__article-image {
+  width: 100%;
+  height: auto;
+  background: white;
+  /* object-fit: contain; */
+}
+
+.site-max-width {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Pushes TRY IT/REPO to bottom of the card */
+.mdl-card__supporting-text {
+  height: 100%;
+}
+
+.port__language-icons {
+  max-width: 1.5em;
+  padding-left: 0.5em;
+  height: 30px;
+  object-fit: contain;
+}
+
 /* if used on a small device, set padding and margin to fit onto page */
 @media all and (max-width: 414px) and (orientation: portrait) {
   .about__image {
@@ -64,4 +88,9 @@ a {
   .about__me {
     margin-top: 0;
   }
+}
+
+/* Titles in portfolio page */
+#titles {
+  margin-inline-start: 25px;
 }
