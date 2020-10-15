@@ -66,7 +66,7 @@
 
             <a href="#tab-about-panel" class="mdl-tabs__tab ">About</a>
             <a href="#tab-portfolio-panel" class="mdl-tabs__tab is-active">Portfolio</a>
-            <a href="#tab-contact-panel" class="mdl-tabs__tab contact">Contact</a>
+            <!-- <a href="#tab-contact-panel" class="mdl-tabs__tab contact">Contact</a> -->
           </div>
 
           <!-- Setup the 'about-panel' tab display. This is a grid where the left contains and image and
@@ -87,8 +87,7 @@
                   <div style="margin: auto;" class="mdl-card__supporting-text">
                     <h2 class="about__me">Julie Tippett</h2>
                     <div>
-                      <a href="http://github.com/tippettj" target="_blank"><img class="about__social-media" src="./images/media/githubIcon.svg"></img>
-                      </a>
+                      <a href="http://github.com/tippettj" target="_blank"><img class="about__social-media" src="./images/media/githubIcon.svg"></img></a>
                       <a href="http://linkedin.com/in/julie-s-tippett" target="_blank"><img class="about__social-media" src="./images/media/linkedInIcon.png"></img>
                       </a>
                       <div>
@@ -102,10 +101,10 @@
 
             <!-- Setup the 'portfolio' tab display. This contains the crux of information in cards  -->
             <div class="container mdl-tabs__panel is-active" id="tab-portfolio-panel">
-              <p class="mdl-typography--title" id="titles">Apps and APIs</p>
 
               <div class="mdl-grid site-max-width">
-                
+                <p class="mdl-typography--title mdl-cell--12-col" id="titles">Apps and APIs</p>
+
                 <!-- Weather App Card-->
                 <div class="mdl-cell mdl-card mdl-shadow--2dp">
                   <div class="mdl-card__media">
@@ -120,12 +119,23 @@
                   </div>
                   <br>
                   <div >
-                    <a href="https://nodejs.org/en/" target="_blank">
-                    <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
-                    <a href="https://expressjs.com/" target="_blank">
-                    <img class="port__language-icons" src="./images/media/expressIcon.png" alt="Express Icon"></a>
-                    <a href="https://heroku.com/" target="_blank">
-                    <img class="port__language-icons" src="./images/media/herokuIcon.svg" alt="Heroku Icon"></a>
+                    <div  class="icon material-icons">
+                      <a id="w-node-tt" href="https://nodejs.org/en/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
+                      <span class="mdl-tooltip " for="w-node-tt">Node</span>                   
+                    </div> 
+
+                    <div  class="icon material-icons">
+                      <a id="w-express-tt" href="https://expressjs.com/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/expressIcon.png" alt="Express Icon"></a>
+                      <span class="mdl-tooltip " for="w-express-tt">Express</span>                   
+                    </div> 
+
+                    <div  class="icon material-icons">
+                      <a id="w-heroku-tt" href="https://heroku.com/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/herokuIcon.svg" alt="Heroku Icon"></a>
+                      <span class="mdl-tooltip " for="w-heroku-tt">Heroku</span>                   
+                    </div> 
 
                   </div>
                   <br>
@@ -150,22 +160,71 @@
 
                   <br>
                   <div >
-                    <a href="https://nodejs.org/en/" target="_blank">
-                    <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
-                    <a href="https://expressjs.com/" target="_blank">
-                    <img class="port__language-icons" src="./images/media/expressIcon.png" alt="Express Icon"></a>
-                    <a href="https://heroku.com/" target="_blank">
-                    <img class="port__language-icons" src="./images/media/herokuIcon.svg" alt="Heroku Icon"></a>
+
+                    <div  class="icon material-icons">
+                      <a id="c-node-tt" href="https://nodejs.org/en/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
+                      <span class="mdl-tooltip " for="c-node-tt">Node</span>                   
+                    </div> 
+
+                    <div  class="icon material-icons">
+                      <a id="c-express-tt" href="https://expressjs.com/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/expressIcon.png" alt="Express Icon"></a>
+                      <span class="mdl-tooltip " for="c-express-tt">Express</span>                   
+                    </div> 
+
+                    <div  class="icon material-icons">
+                      <a id="c-heroku-tt" href="https://heroku.com/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/herokuIcon.svg" alt="Heroku Icon"></a>
+                      <span class="mdl-tooltip " for="c-heroku-tt">Heroku</span>                   
+                    </div> 
 
                   </div>
                   <br>
                   <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://tippj-weather-app.herokuapp.com" target="_blank">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://tippj-chat-app.herokuapp.com" target="_blank">
                       Try it
                     </a>
                   </div>
                 </div>
   
+                <!-- Feedback App -->
+                <div class="mdl-cell mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__media">
+                    <img class="portfolio__article-image" src="./images/cards/feedbackApp.png" border="0" alt="./images/cards/check-list.png">
+                  </div>
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Feedback App</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <p>Feedback system</p>
+                  </div>
+
+                  <br>
+
+                  <div>
+                    <div  class="icon material-icons">
+                      <a id="f-node-tt" href="https://nodejs.org/en/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
+                      <span class="mdl-tooltip " for="f-node-tt">Node</span>                   
+                    </div> 
+
+                    <div class="icon material-icons">
+                      <a id="f-react-tt" href="https://reactjs.org/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/reactIcon.png" alt=""></a>
+                      <span class="mdl-tooltip " for="f-react-tt">React</span>
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/tippettj/task-manager" target="_blank">
+                      In progress
+                    </a>
+                  </div>
+                </div>
+
                 <!-- Task Manager API -->
                 <div class="mdl-cell mdl-card mdl-shadow--2dp">
                   <div class="mdl-card__media">
@@ -181,17 +240,38 @@
 
                   <br>
                   <div >
-                    <a href="https://nodejs.org/en/" target="_blank">
-                      <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
-                    <a href="https://expressjs.com/" target="_blank">
-                      <img class="port__language-icons" src="./images/media/expressIcon.png" alt="Express Icon"></a>
-                    <a href="https://mongodb.com/" target="_blank">
-                        <img class="port__language-icons" src="./images/media/mongoIcon.png" alt="Mongodb Icon"></a>
-                    <a href="https://heroku.com/" target="_blank">
-                      <img class="port__language-icons" src="./images/media/herokuIcon.svg" alt="Heroku Icon"></a>
-                    <a href="https://mongoosejs.com/" target="_blank">
-                    <img class="port__language-icons" src="./images/media/mongooseIcon.jpg" alt=""></a>
+
+                    <div  class="icon material-icons">
+                      <a id="t-node-tt" href="https://nodejs.org/en/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/nodejsIcon.svg" alt="Node JS Icon"></a>
+                      <span class="mdl-tooltip " for="t-node-tt">Node</span>                   
+                    </div> 
+
+                    <div  class="icon material-icons">
+                      <a id="t-express-tt" href="https://expressjs.com/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/expressIcon.png" alt="Express Icon"></a>
+                      <span class="mdl-tooltip " for="t-express-tt">Express</span>                   
+                    </div> 
+
+                    <div  class="icon material-icons">
+                      <a id="t-heroku-tt" href="https://heroku.com/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/herokuIcon.svg" alt="Heroku Icon"></a>
+                      <span class="mdl-tooltip " for="t-heroku-tt">Heroku</span>                   
+                    </div> 
+
+                    <div  class="icon material-icons">
+                      <a id="t-mongo-tt" href="https://mongodb.com/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/mongoIcon.png" alt="Mongo Icon"></a>
+                      <span class="mdl-tooltip " for="t-mongo-tt">Mongo</span>                   
+                    </div> 
+
+                    <div  class="icon material-icons">
+                      <a id="t-mongoose-tt" href="https://mongoosejs.com/" target="_blank">
+                        <img class="port__language-icons" src="./images/media/mongooseIcon.jpg" alt="Mongoose Icon"></a>
+                      <span class="mdl-tooltip " for="t-mongoose-tt">Mongoose</span>                   
+                    </div>                       
                   </div>
+                         
                   <br>
 
                   <div class="mdl-card__actions mdl-card--border">
@@ -200,10 +280,15 @@
                     </a>
                   </div>
                 </div>
+                
+                
+                <p class="mdl-typography--title mdl-cell--12-col" id="titles">Open Source</p>
+
+
               </div> <!-- end grid containing cards-->
 
               </div><!-- end portfolio tab panel -->            
-            
+
           </div><!-- end tab panels  -->
 
         </div>

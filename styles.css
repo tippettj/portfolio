@@ -1,7 +1,7 @@
 /* changge the link color to white - may need to revisit for other links */
-a {
+/* a {
   color: white;
-}
+} */
 
 /* Set navigation display and scrolling behaviour */
 .navigation-tabs {
@@ -93,4 +93,9 @@ img.portfolio__article-image {
 /* Titles in portfolio page */
 #titles {
   margin-inline-start: 25px;
+  margin-top: 20px;
+}
+
+.mdl-tooltip {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
