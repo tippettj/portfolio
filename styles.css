@@ -1,7 +1,7 @@
 /* changge the link color to white - may need to revisit for other links */
-/* a {
-  color: white;
-} */
+p {
+  line-height: 1.2em;
+}
 
 /* Set navigation display and scrolling behaviour */
 .navigation-tabs {
@@ -33,6 +33,7 @@
   line-height: normal;
   color: slategrey;
   margin-top: 20vh;
+  padding-top: 2em;
 }
 
 .about__desc {
@@ -40,7 +41,9 @@
   color: slategrey;
   margin-top: 2vh;
 }
-
+p .about__desc {
+  font-size: 14px;
+}
 .about__image {
   padding-top: 200px;
   width: auto;
@@ -49,6 +52,8 @@
 
 .about__social-media {
   max-width: 2em;
+  padding-left: 1.5em;
+  padding-bottom: 2em;
 }
 
 #about__text {
@@ -98,4 +103,18 @@ img.portfolio__article-image {
 
 .mdl-tooltip {
   font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+#task-api {
+  background-color: #048679;
+}
+
+#pts-border {
+  border-color: darkcyan;
+  border-bottom-width: 1px;
+}
+
+#feedback-border {
+  border-color: rgb(211, 160, 22);
+  border-bottom-width: 1px;
 }
